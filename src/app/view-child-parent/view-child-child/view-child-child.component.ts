@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewChildChildComponent implements OnInit {
 
-  currentCount: number = 0;
+  childCounter: number = 0;
 
   constructor() { }
 
@@ -15,11 +15,11 @@ export class ViewChildChildComponent implements OnInit {
   }
 
   increaseCounter() {
-    this.currentCount += 1;
+    this.childCounter += 1;
   }
 
   resetCounter() {
-    this.currentCount = 0;
+    this.childCounter = 0;
   }
 
 }

@@ -1,12 +1,14 @@
-<div class="parent">
-  <div>
-    <h3> Parent Count: {{parentCounter}} </h3>
+<div style="text-align: center">
+  <h1>Component Interaction using Input/Output binding</h1>
+
+  <div class="parent">
+    <div>
+      <h3> Parent Count: {{parentCounter}} </h3>
+    </div>
+
+    <input type="button" value="Increase Count" (click)="increaseCounter();">
+
+    <app-data-binding-child [childCounter]="parentCounter" (countUpdated)="onCountUpdated($event)">
+    </app-data-binding-child>
   </div>
-
-  <input type="button" value="Increase Count" (click)="increaseCounter();">
-
-  <app-data-binding-child
-  [childCounter]="parentCounter"
-  (countUpdated)="onCountUpdated($event)">
-  </app-data-binding-child>
 </div>

@@ -2,7 +2,6 @@ import { DataBindingParentComponent } from './data-binding-parent/data-binding-p
 import { ViewChildParentComponent } from './view-child-parent/view-child-parent.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InputBindingParentComponent } from './input-binding-parent/input-binding-parent.component';
 import { LocalVariableParentComponent } from './local-variable-parent/local-variable-parent.component';
 import { InterceptInputParentComponent } from './intercept-input-parent/intercept-input-parent.component';
 

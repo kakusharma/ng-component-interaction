@@ -1,9 +1,13 @@
-<div class="parent">
-  <div>
-    <h3> Count: {{parentCounter}} </h3>
+<div style="text-align: center">
+  <h1>Intercepting Input binding</h1>
+
+  <div class="parent">
+    <div>
+      <h3> Parent Count: {{parentCounter}} </h3>
+    </div>
+
+    <input type="button" value="Increase Count" (click)="increaseCounter();">
+
+    <app-intercept-input-child [childCounter]="parentCounter"></app-intercept-input-child>
   </div>
-
-  <input type="button" value="Increase Count" (click)="increaseCounter();">
-
-  <app-intercept-input-child [childCounter]="parentCounter"></app-intercept-input-child>
 </div>

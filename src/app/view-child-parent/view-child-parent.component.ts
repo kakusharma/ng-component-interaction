@@ -16,7 +16,7 @@ export class ViewChildParentComponent implements OnInit {
   ngOnInit() { }
 
   counter() {
-    return this.childComponent.currentCount;
+    return this.childComponent.childCounter;
   }
 
   increaseCounter() {

@@ -7,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocalVariableChildComponent implements OnInit {
 
-  currentCount = 0;
+  childCounter = 0;
   constructor() { }
 
   ngOnInit() {
   }
 
   increaseCounter() {
-    this.currentCount += 1;
+    this.childCounter += 1;
   }
 
   resetCounter() {
-    this.currentCount = 0;
+    this.childCounter = 0;
   }
 }

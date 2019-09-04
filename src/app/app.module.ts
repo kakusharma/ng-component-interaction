@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InputBindingParentComponent } from './input-binding-parent/input-binding-parent.component';
-import { InputBindingChildComponent } from './input-binding-parent/input-binding-child/input-binding-child.component';
 import { LocalVariableParentComponent } from './local-variable-parent/local-variable-parent.component';
 import { LocalVariableChildComponent } from './local-variable-parent/local-variable-child/local-variable-child.component';
 import { ViewChildParentComponent } from './view-child-parent/view-child-parent.component';
@@ -17,8 +15,6 @@ import { InterceptInputChildComponent } from './intercept-input-parent/intercept
 @NgModule({
   declarations: [
     AppComponent,
-    InputBindingParentComponent,
-    InputBindingChildComponent,
     LocalVariableParentComponent,
     LocalVariableChildComponent,
     ViewChildParentComponent,

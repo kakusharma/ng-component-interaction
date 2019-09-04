@@ -1,9 +1,13 @@
-<div class="parent">
-  <div>
-    <h3> Count: {{counter()}} </h3>
-  </div>
+<div style="text-align: center">
+  <h1>Component Interaction using View Child</h1>
 
-  <input type="button" value="Increase Count" (click)="increaseCounter()">
-  <input type="button" value="Reset Counter" (click)="resetCounter()">
-  <app-view-child-child></app-view-child-child>
+  <div class="parent">
+    <div>
+      <h3> Child Count: {{counter()}} </h3>
+    </div>
+
+    <input type="button" value="Increase Count" (click)="increaseCounter()">
+    <input type="button" value="Reset Counter" (click)="resetCounter()">
+    <app-view-child-child></app-view-child-child>
+  </div>
 </div>
