@@ -1,0 +1,9 @@
+<div class="child">
+  <div>
+    <h3> Count: {{currentCount}} </h3>
+    <br />
+    <h2 *ngIf="isCountEven">Even Count</h2>
+    <h2 *ngIf="!isCountEven">Odd Count</h2>
+  </div>
+  <input type="button" value="Decrease Count" (click)="decreaseCounter();">
+</div>

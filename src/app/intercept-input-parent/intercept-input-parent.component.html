@@ -1,0 +1,9 @@
+<div class="parent">
+  <div>
+    <h3> Count: {{parentCounter}} </h3>
+  </div>
+
+  <input type="button" value="Increase Count" (click)="increaseCounter();">
+
+  <app-intercept-input-child [childCounter]="parentCounter"></app-intercept-input-child>
+</div>

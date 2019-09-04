@@ -1,0 +1,8 @@
+<div class="parent">
+  <div>
+    <h3> Count: {{parentCounter}} </h3>
+  </div>
+
+  <input type="button" value="Increase Count" (click)="increaseCounter();">
+  <app-input-binding-child [childCounter]="parentCounter" (countUpdate)="onCountUpdated($event)"></app-input-binding-child>
+</div>

@@ -1,0 +1,9 @@
+<div class="parent">
+  <div>
+    <h3> Count: {{counter.currentCount}} </h3>
+  </div>
+
+  <input type="button" value="Increase Count" (click)="counter.increaseCounter()">
+  <input type="button" value="Reset Counter" (click)="counter.resetCounter()">
+  <app-local-variable-child #counter></app-local-variable-child>
+</div>
