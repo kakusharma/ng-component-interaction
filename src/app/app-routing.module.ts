@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LocalVariableParentComponent } from './local-variable-parent/local-variable-parent.component';
 import { InterceptInputParentComponent } from './intercept-input-parent/intercept-input-parent.component';
+import { ShoppingComponent } from './services/shopping/shopping.component';
 
 const routes: Routes = [
   { path: 'data-binding', component: DataBindingParentComponent },
   { path: 'intercept-binding', component: InterceptInputParentComponent },
   { path: 'local-variable', component: LocalVariableParentComponent },
   { path: 'view-child', component: ViewChildParentComponent },
+  { path: 'services', component: ShoppingComponent },
   { path: '', redirectTo: 'data-binding', pathMatch: 'full' }
 ];
 

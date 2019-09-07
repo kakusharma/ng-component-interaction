@@ -13,7 +13,7 @@ export class DataBindingChildComponent implements OnInit {
   // @Input('childCounter') childCounter;
 
   //NOTE: Clicking the button emits a number, a number (integer) payload.
-  @Output() countUpdated = new EventEmitter<number>();
+  @Output() countUpdated: EventEmitter<number> = new EventEmitter<number>();
 
   //with alias
   // @Output('countUpdated') countUpdated = new EventEmitter<number>();
