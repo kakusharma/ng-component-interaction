@@ -2,11 +2,12 @@
   <h1>Component Interaction using Local Variable (Reference variable)</h1>
   <div class="parent">
     <div>
-      <h3> Parent Count: {{childComponent.childCounter}} </h3>
+      <h3> Count: {{ ref.childCounter }} </h3>
     </div>
 
-    <input type="button" value="Increase Count" (click)="childComponent.increaseCounter()">
-    <input type="button" value="Reset Counter" (click)="childComponent.resetCounter()">
-    <app-local-variable-child #childComponent></app-local-variable-child>
+    <input type="button" value="Increase Count" (click)="ref.increaseCounter()">
+    <input type="button" value="Reset Counter" (click)="ref.resetCounter()">
+
+    <app-local-variable-child #ref></app-local-variable-child>
   </div>
 </div>

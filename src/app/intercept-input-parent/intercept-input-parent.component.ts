@@ -19,8 +19,4 @@ export class InterceptInputParentComponent implements OnInit {
     this.parentCounter += 1;
   }
 
-  onCountUpdated(count: number) {
-    this.parentCounter = count;
-  }
-
 }

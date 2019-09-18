@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewChildChildComponent implements OnInit {
 
-  childCounter: number = 0;
+  childCounter = 0;
 
   constructor() { }
 

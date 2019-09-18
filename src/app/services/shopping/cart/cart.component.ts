@@ -1,4 +1,4 @@
-import { CartService } from './../cart.service';
+import { CartService } from '../../cart.service';
 import { Product } from './../products/products.component';
 import { Component, OnInit } from '@angular/core';
 
@@ -10,19 +10,18 @@ import { Component, OnInit } from '@angular/core';
 export class CartComponent implements OnInit {
 
   cartTotal: number = 0;
-  cartItems: Product[] = [];
 
   constructor(
     private cartService: CartService
   ) { }
 
   ngOnInit() {
-    this.cartService.cartUpdated.subscribe(
-      (product: Product) => {
-        this.cartItems.push(product);
-        this.cartTotal += product.cost;
-      }
-    );
+    this.cartService.cartUpdated
+      .subscribe(
+        (product: Product) => {
+          this.cartTotal += product.cost;
+        }
+      );
   }
 
 }

@@ -1,30 +1,35 @@
 import { ViewChildChildComponent } from './view-child-child/view-child-child.component';
-import { Component, OnInit, ViewChild, AfterContentChecked, AfterViewChecked } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterContentChecked, AfterViewChecked, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-view-child-parent',
   templateUrl: './view-child-parent.component.html',
   styleUrls: ['./view-child-parent.component.css']
 })
-export class ViewChildParentComponent implements OnInit {
+export class ViewChildParentComponent implements OnInit, AfterViewInit {
 
-  @ViewChild(ViewChildChildComponent)
-  private childComponent: ViewChildChildComponent;
+  @ViewChild(ViewChildChildComponent) reference: ViewChildChildComponent;
 
   constructor() { }
 
   ngOnInit() { }
 
+  ngAfterViewInit() {
+    this.counter = () => {
+      return this.reference.childCounter;;
+    }
+  }
+
   counter() {
-    return this.childComponent.childCounter;
+    return 0;
   }
 
   increaseCounter() {
-    this.childComponent.increaseCounter();
+    this.reference.increaseCounter();
   }
 
   resetCounter() {
-    this.childComponent.resetCounter();
+    this.reference.resetCounter();
   }
 
 }

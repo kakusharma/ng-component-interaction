@@ -18,7 +18,4 @@ export class DataBindingParentComponent implements OnInit {
     this.parentCounter += 1;
   }
 
-  onCountUpdated(count: number) {
-    this.parentCounter = count;
-  }
 }

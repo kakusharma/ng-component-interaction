@@ -3,11 +3,12 @@
 
   <div class="parent">
     <div>
-      <h3> Child Count: {{counter()}} </h3>
+      <h3> Count: {{ counter() }} </h3>
     </div>
-
+  <div style="margin-bottom: 5px;">
     <input type="button" value="Increase Count" (click)="increaseCounter()">
     <input type="button" value="Reset Counter" (click)="resetCounter()">
+  </div>
     <app-view-child-child></app-view-child-child>
   </div>
 </div>

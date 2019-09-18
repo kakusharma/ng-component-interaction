@@ -1,16 +1,17 @@
 import { Injectable, EventEmitter } from '@angular/core';
-import { Product } from './products/products.component';
+import { Product } from './shopping/products/products.component';
+import { of, Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
 
-  cartUpdated = new EventEmitter<Product>();
+  cartUpdated = new Subject();
 
   constructor() { }
 
   addProduct(product: Product) {
-    this.cartUpdated.emit(product);
+    this.cartUpdated.next(product);
   }
 }

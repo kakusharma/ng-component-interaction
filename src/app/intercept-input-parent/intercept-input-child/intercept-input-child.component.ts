@@ -10,6 +10,8 @@ export class InterceptInputChildComponent implements OnInit, OnChanges {
   private _count: number;
   isCountEven: boolean;
 
+  // @Input() childCounter = 0;
+
   @Input()
   get childCounter(): number {
     return this._count;
@@ -26,9 +28,9 @@ export class InterceptInputChildComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes && changes["childCounter"]) {
-      var count = changes["childCounter"].currentValue;
-      this.isCountEven = (count % 2 === 0);
-    }
+    // if (changes && changes.childCounter) {
+    //   var count = changes.childCounter.currentValue;
+    //   this.isCountEven = (count % 2 === 0);
+    // }
   }
 }

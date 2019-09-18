@@ -13,8 +13,11 @@ import { DataBindingChildComponent } from './data-binding-parent/data-binding-ch
 import { InterceptInputParentComponent } from './intercept-input-parent/intercept-input-parent.component';
 import { InterceptInputChildComponent } from './intercept-input-parent/intercept-input-child/intercept-input-child.component';
 import { ShoppingComponent } from './services/shopping/shopping.component';
-import { ProductsComponent } from './services/products/products.component';
-import { CartComponent } from './services/cart/cart.component';
+import { ProductsComponent } from './services/shopping/products/products.component';
+import { CartComponent } from './services/shopping/cart/cart.component';
+import { ObservableComponent } from './observable/observable.component';
+import { OutputBindingParentComponent } from './output-binding-parent/output-binding-parent.component';
+import { OutputBindingChildComponent } from './output-binding-parent/output-binding-child/output-binding-child.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { CartComponent } from './services/cart/cart.component';
     InterceptInputChildComponent,
     ShoppingComponent,
     ProductsComponent,
-    CartComponent
+    CartComponent,
+    ObservableComponent,
+    OutputBindingParentComponent,
+    OutputBindingChildComponent
   ],
   imports: [
     BrowserModule,
